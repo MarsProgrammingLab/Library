@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>Your Favorite Library</title>
+</head>
+<body>
+    <div class="container">
+        <div class="side-bar">
+            <h1>Your Favorite Library</h1>
+            <form id="book-form">
+                <label for="title"></label><br>
+                <input type="text" id="title" name="title" placeholder="What is the title?"><br>
+
+                <label for="author"></label><br>
+                <input type="text" id="author" name="author" placeholder="Who is the author?"><br>
+
+                <label for="pages"></label><br>
+                <input type="text" id="pages" name="pages" placeholder="How many pages?"><br>
+
+                <label for="isbn"></label><br>
+                <input type="text" id="isbn" name="isbn" placeholder="ISBN"><br>
+
+                <label for="status" style="color: black;">
+                    <input type="checkbox" id="status" class="book-checkbox" name="status" value="✖"">
+                </label><br><br>
+                
+                <div class="submit">
+                    <button type="submit" id="add-book-btn"">Add Book</button>
+                </div> 
+            </form> 
+        </div>
+        <main class="content">
+            <table id="library-list">
+                <thead id="book-info">
+                    <tr>
+                        <td>Title</td>
+                        <td>Author</td>
+                        <td>Pages</td>
+                        <td>ISBN</td>
+                        <td>Status</td>
+                        <td>Delete</td>
+                    </tr>
+                </thead>
+                <tbody id="book-entered">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="card-container" id="card-container">
+            <!-- Book cards will be dynamically inserted here by JavaScript -->
+            </div>
+            <script src="script.js"></script>
+        </main>     
+    </div>
+    
+</body>
+</html>

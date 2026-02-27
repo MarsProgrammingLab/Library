@@ -1,0 +1,115 @@
+* {
+    /* font-family: "Lucida Console", "Courier New", monospace; */
+    font-family: 'Nimbus Mono PS', 'Courier New', monospace;
+}
+body {
+    display: flex;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    background-color: #96B7A6;
+    font-weight: 500;
+    width: 250px;
+    padding: 30px;
+}
+
+.side-bar #book-form {
+    max-width: 100%
+}
+
+.side-bar h1 {
+    margin-bottom: 50px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="text"] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: dashed;
+    color: black;
+    font-size: larger;
+    background-color: #96B7A6;
+    border-bottom-color: whitesmoke;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 360px);
+    padding: 30px;
+}
+
+#add-book-btn {
+    background-color: peru;
+    color: whitesmoke;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+#library-list {
+    font-size: larger;
+    font-weight: 500;
+    width: 80%;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+#book-info {
+    background-color: peru;
+    color: whitesmoke;
+}
+
+#book-entered {
+    border-bottom-style: dotted;
+    border-bottom-color: #96B7A6;   
+}
+
+#book-info, td {
+    padding: 5px;
+}
+
+#book-entered, td {
+    padding: 5px;
+}
+
+input[type="text"] {
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.delete-btn {
+    background-color: rgb(189, 0, 0);
+    color: white;
+    font-weight:500;
+    font-size: 15px;
+    border-radius: 6px;
+    border-color: black;
+}
+
+.toggle-button {
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 6px;
+    border-color: black;
+}
+
+
+
