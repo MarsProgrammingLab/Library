@@ -93,6 +93,12 @@ input[type="text"] {
   width: 200px;
 }
 
+.status {
+    font-size: larger;
+    color: rgb(54, 54, 54); 
+    font-weight: 500;
+}
+
 .delete-btn {
     background-color: rgb(189, 0, 0);
     color: white;
